@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    height: 100vh;
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header {
+    
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.header .logo{
+    height: 10vh;
+    width: 10vw;
+    text-align: center;
+    line-height: 10vh;
+    text-transform: uppercase;
+    color: goldenrod;
+    font-size: 30px;
+    background-color: rgba(0,0,0, .3);
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000;
+}
+.header .navigation{
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+}
+.header .navigation .menu{
+    list-style: none;
+    flex-basis: 70%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.header .navigation .menu li{
+    height: 10vh;
+    background-color: rgba(0,0,0, .3);
+    transition: .3s;
+    
+}
+.header .navigation .menu li a{
+    display: block;
+    color: white;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 10vh;
+    text-transform: uppercase;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.header .navigation .menu li:hover{
+    background-color: rgba(255,255,255, .5);
+
+}
+.header .navigation .menu li:hover a{
+    color: black;
+}
+.welcome{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+.welcome h2{
+    font-size: 15vh;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+    color: bisque;
+}
+.welcome h3{
+    font-size: 7vh;
+    text-transform: uppercase;
+    font-family: 'Permanent Marker', cursive;
+    color: bisque;
+}
+.welcome p{
+    padding-top: 15px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    background-color: rgba(0,0,0, .1);
+}
