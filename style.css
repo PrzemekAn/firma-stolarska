@@ -10,12 +10,15 @@ header{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .header {
     
     display: flex;
     justify-content: center;
     padding-top: 10px;
+    background-color: rgba(0,0,0, .4);
+    border-bottom: 2px solid white;
 }
 .header .logo{
     height: 10vh;
@@ -25,7 +28,7 @@ header{
     text-transform: uppercase;
     color: goldenrod;
     font-size: 30px;
-    background-color: rgba(0,0,0, .3);
+    /* background-color: rgba(0,0,0, .3); */
     font-family: 'Indie Flower', cursive;
     font-weight: bold;
     text-shadow: 0 0 10px #000;
@@ -36,15 +39,16 @@ header{
     justify-content: center;
 }
 .header .navigation .menu{
+    
     list-style: none;
-    flex-basis: 70%;
+    flex-basis: 72%;
     display: flex;
     justify-content: space-around;
     
 }
 .header .navigation .menu li{
-    height: 10vh;
-    background-color: rgba(0,0,0, .3);
+    height: 9vh;
+    /* background-color: rgba(0,0,0, .3); */
     transition: .3s;
     
 }
@@ -62,6 +66,7 @@ header{
 }
 .header .navigation .menu li:hover{
     background-color: rgba(255,255,255, .5);
+    cursor: pointer;
 
 }
 .header .navigation .menu li:hover a{
@@ -94,3 +99,84 @@ header{
     font-family: 'Indie Flower', cursive;
     background-color: rgba(0,0,0, .1);
 }
+/* -------------------------------------------------------- */
+
+.services{
+    height: 100vh;
+    background-image: url('images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+}
+.services h1{
+    text-align: center;   
+    padding: 15px 0;
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-shadow: 1px 2px 3px black;
+    color: bisque;
+}
+.services .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.services .flex-container .service{
+    
+
+    height: 300px;
+    flex-basis: 30%;
+    background-position: left;
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0, 1);
+     background-size: 100%;
+     transition: .5s;
+     
+}
+
+
+.services .flex-container .houses{
+    background-image: url('images/domy.jpg');
+}
+.services .flex-container .stairs{
+    background-image: url('images/schody.jpg');
+}
+.services .flex-container .door{
+    background-image: url('images/drzwi.jpg');
+}
+.services .flex-container .renovation{
+    background-image: url('images/cyklinowanie.jpg');
+}
+.services .flex-container .doghouse{
+    background-image: url('images/buda.jpg');   
+}
+.services .flex-container .terraces{
+    background-image: url('images/taras.jpg');
+    
+}
+.service .service-text{
+    text-align: center;
+    line-height: 300px;
+    font-size: 40px;
+    color: transparent;
+    font-family: 'Indie Flower', cursive;
+    transition: .3s;
+    
+}
+.service:hover .service-text{
+    background-color: rgba(0, 0, 0, .4);
+    color: bisque;
+}
+.services .flex-container .service:hover{
+    /* background-size: 110%;  */
+    flex-basis: 33%;
+}
+
